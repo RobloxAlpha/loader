@@ -18,12 +18,13 @@ AttachmentFrame.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = AttachmentFrame
 MainFrame.BackgroundColor3 = Color3.fromRGB(29, 119, 255)
-MainFrame.Position = UDim2.new(0.409283876, 0, 0.381884962, 0)
+MainFrame.Position = UDim2.new(0.425429702, 0, 0.384332955, 0)
 MainFrame.Size = UDim2.new(0, 286, 0, 258)
 
 TextLabel.Parent = MainFrame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, 0.116279073, 0)
 TextLabel.Size = UDim2.new(0, 286, 0, 258)
 TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "SQLite APIHas been Loaded."
@@ -35,19 +36,19 @@ Right.Name = "Right"
 Right.Parent = AttachmentFrame
 Right.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
 Right.BackgroundTransparency = 0.300
-Right.Position = UDim2.new(0.583663881, 0, 0.473620832, 0)
-Right.Size = UDim2.new(0, 680, 0, 70)
+Right.Position = UDim2.new(0.574288905, 0, 0.473620832, 0)
+Right.Size = UDim2.new(0, 823, 0, 70)
 
 Left.Name = "Left"
 Left.Parent = AttachmentFrame
 Left.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
 Left.BackgroundTransparency = 0.300
-Left.Position = UDim2.new(7.43877564e-08, 0, 0.473620832, 0)
-Left.Size = UDim2.new(0, 671, 0, 70)
+Left.Position = UDim2.new(7.94728621e-08, 0, 0.473620832, 0)
+Left.Size = UDim2.new(0, 816, 0, 70)
 
 -- Scripts:
 
-local function KHSNJV_fake_script() -- TextLabel.LocalScript 
+local function LBPZ_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	wait(10)
@@ -55,4 +56,4 @@ local function KHSNJV_fake_script() -- TextLabel.LocalScript
 	wait(5)
 	script.Parent.Parent.Parent.Parent.AttachmentFrame:Destroy()
 end
-coroutine.wrap(KHSNJV_fake_script)()
+coroutine.wrap(LBPZ_fake_script)()
