@@ -57,14 +57,17 @@ Left.Visible = false
 
 fade.Name = "fade"
 fade.Parent = AttachmentFrame
+fade.Active = true
 fade.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
 fade.BackgroundTransparency = 0.500
-fade.Position = UDim2.new(0, 0, -0.0290872622, 0)
-fade.Size = UDim2.new(0, 1921, 0, 1054)
+fade.ClipsDescendants = true
+fade.Position = UDim2.new(-0.0114583336, 0, -0.0461384133, 0)
+fade.Selectable = true
+fade.Size = UDim2.new(0, 1942, 0, 1129)
 
 Frame.Parent = fade
 Frame.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-Frame.Position = UDim2.new(0.374284238, 0, 0.323687017, 0)
+Frame.Position = UDim2.new(0.388736129, 0, 0.277245939, 0)
 Frame.Size = UDim2.new(0, 577, 0, 329)
 
 TextBox.Parent = Frame
@@ -116,16 +119,18 @@ Pass.TextWrapped = true
 
 -- Scripts:
 
-local function OLBHY_fake_script() -- TextLabel.LocalScript 
+local function LYLMU_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
-	wait(10)
-	script.Parent.Text = "Credit : RobloxAlpha"
-	wait(5)
-	script.Parent.Parent.Parent.Parent.AttachmentFrame:Destroy()
+	if script.Parent.Parent.Parent.MainFrame.Visible == true then
+		wait(10)
+		script.Parent.Text = "Credit : RobloxAlpha"
+		wait(5)
+		script.Parent.Parent.Parent.Parent.AttachmentFrame:Destroy()
+	end
 end
-coroutine.wrap(OLBHY_fake_script)()
-local function VRGLSLD_fake_script() -- Continue.LocalScript 
+coroutine.wrap(LYLMU_fake_script)()
+local function RQRKXI_fake_script() -- Continue.LocalScript 
 	local script = Instance.new('LocalScript', Continue)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -137,8 +142,8 @@ local function VRGLSLD_fake_script() -- Continue.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VRGLSLD_fake_script)()
-local function DTVP_fake_script() -- Pass.LocalScript 
+coroutine.wrap(RQRKXI_fake_script)()
+local function PONYFLW_fake_script() -- Pass.LocalScript 
 	local script = Instance.new('LocalScript', Pass)
 
 	local plr = game.Players.LocalPlayer
@@ -156,4 +161,11 @@ local function DTVP_fake_script() -- Pass.LocalScript
 		end
 	end)
 end
-coroutine.wrap(DTVP_fake_script)()
+coroutine.wrap(PONYFLW_fake_script)()
+local function MKBQD_fake_script() -- fade.LocalScript 
+	local script = Instance.new('LocalScript', fade)
+
+	print("Hello world!")
+	
+end
+coroutine.wrap(MKBQD_fake_script)()
