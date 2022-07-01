@@ -47,7 +47,7 @@ Left.Size = UDim2.new(0, 671, 0, 70)
 
 -- Scripts:
 
-local function YSONJZY_fake_script() -- TextLabel.LocalScript 
+local function KHSNJV_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	wait(10)
@@ -55,4 +55,4 @@ local function YSONJZY_fake_script() -- TextLabel.LocalScript
 	wait(5)
 	script.Parent.Parent.Parent.Parent.AttachmentFrame:Destroy()
 end
-coroutine.wrap(YSONJZY_fake_script)()
+coroutine.wrap(KHSNJV_fake_script)()
