@@ -59,11 +59,12 @@ fade.Name = "fade"
 fade.Parent = AttachmentFrame
 fade.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
 fade.BackgroundTransparency = 0.500
-fade.Size = UDim2.new(0, 1921, 0, 933)
+fade.Position = UDim2.new(0, 0, -0.0290872622, 0)
+fade.Size = UDim2.new(0, 1921, 0, 1054)
 
 Frame.Parent = fade
 Frame.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-Frame.Position = UDim2.new(0.322748572, 0, 0.323687017, 0)
+Frame.Position = UDim2.new(0.374284238, 0, 0.323687017, 0)
 Frame.Size = UDim2.new(0, 577, 0, 329)
 
 TextBox.Parent = Frame
@@ -115,7 +116,7 @@ Pass.TextWrapped = true
 
 -- Scripts:
 
-local function BQOMWTD_fake_script() -- TextLabel.LocalScript 
+local function OLBHY_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	wait(10)
@@ -123,8 +124,8 @@ local function BQOMWTD_fake_script() -- TextLabel.LocalScript
 	wait(5)
 	script.Parent.Parent.Parent.Parent.AttachmentFrame:Destroy()
 end
-coroutine.wrap(BQOMWTD_fake_script)()
-local function QPJN_fake_script() -- Continue.LocalScript 
+coroutine.wrap(OLBHY_fake_script)()
+local function VRGLSLD_fake_script() -- Continue.LocalScript 
 	local script = Instance.new('LocalScript', Continue)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -136,8 +137,8 @@ local function QPJN_fake_script() -- Continue.LocalScript
 		end
 	end)
 end
-coroutine.wrap(QPJN_fake_script)()
-local function LOAU_fake_script() -- Pass.LocalScript 
+coroutine.wrap(VRGLSLD_fake_script)()
+local function DTVP_fake_script() -- Pass.LocalScript 
 	local script = Instance.new('LocalScript', Pass)
 
 	local plr = game.Players.LocalPlayer
@@ -155,4 +156,4 @@ local function LOAU_fake_script() -- Pass.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LOAU_fake_script)()
+coroutine.wrap(DTVP_fake_script)()
