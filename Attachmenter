@@ -18,7 +18,7 @@ AttachmentFrame.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = AttachmentFrame
 MainFrame.BackgroundColor3 = Color3.fromRGB(29, 119, 255)
-MainFrame.Position = UDim2.new(0.392830461, 0, 0.346389234, 0)
+MainFrame.Position = UDim2.new(0.409283876, 0, 0.381884962, 0)
 MainFrame.Size = UDim2.new(0, 286, 0, 258)
 
 TextLabel.Parent = MainFrame
@@ -35,19 +35,19 @@ Right.Name = "Right"
 Right.Parent = AttachmentFrame
 Right.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
 Right.BackgroundTransparency = 0.300
-Right.Position = UDim2.new(0.606422722, 0, 0.473620832, 0)
-Right.Size = UDim2.new(0, 527, 0, 70)
+Right.Position = UDim2.new(0.583663881, 0, 0.473620832, 0)
+Right.Size = UDim2.new(0, 680, 0, 70)
 
 Left.Name = "Left"
 Left.Parent = AttachmentFrame
 Left.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
 Left.BackgroundTransparency = 0.300
-Left.Position = UDim2.new(6.83739643e-08, 0, 0.473620832, 0)
-Left.Size = UDim2.new(0, 525, 0, 70)
+Left.Position = UDim2.new(7.43877564e-08, 0, 0.473620832, 0)
+Left.Size = UDim2.new(0, 671, 0, 70)
 
 -- Scripts:
 
-local function YBQLX_fake_script() -- TextLabel.LocalScript 
+local function YSONJZY_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	wait(10)
@@ -55,4 +55,4 @@ local function YBQLX_fake_script() -- TextLabel.LocalScript
 	wait(5)
 	script.Parent.Parent.Parent.Parent.AttachmentFrame:Destroy()
 end
-coroutine.wrap(YBQLX_fake_script)()
+coroutine.wrap(YSONJZY_fake_script)()
