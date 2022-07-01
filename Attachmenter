@@ -8,6 +8,12 @@ local MainFrame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local Right = Instance.new("Frame")
 local Left = Instance.new("Frame")
+local fade = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextLabel_2 = Instance.new("TextLabel")
+local Continue = Instance.new("TextButton")
+local Pass = Instance.new("TextButton")
 
 --Properties:
 
@@ -20,6 +26,7 @@ MainFrame.Parent = AttachmentFrame
 MainFrame.BackgroundColor3 = Color3.fromRGB(29, 119, 255)
 MainFrame.Position = UDim2.new(0.425429702, 0, 0.384332955, 0)
 MainFrame.Size = UDim2.new(0, 286, 0, 258)
+MainFrame.Visible = false
 
 TextLabel.Parent = MainFrame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -38,6 +45,7 @@ Right.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
 Right.BackgroundTransparency = 0.300
 Right.Position = UDim2.new(0.574288905, 0, 0.473620832, 0)
 Right.Size = UDim2.new(0, 823, 0, 70)
+Right.Visible = false
 
 Left.Name = "Left"
 Left.Parent = AttachmentFrame
@@ -45,10 +53,69 @@ Left.BackgroundColor3 = Color3.fromRGB(125, 125, 125)
 Left.BackgroundTransparency = 0.300
 Left.Position = UDim2.new(7.94728621e-08, 0, 0.473620832, 0)
 Left.Size = UDim2.new(0, 816, 0, 70)
+Left.Visible = false
+
+fade.Name = "fade"
+fade.Parent = AttachmentFrame
+fade.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+fade.BackgroundTransparency = 0.500
+fade.Size = UDim2.new(0, 1921, 0, 933)
+
+Frame.Parent = fade
+Frame.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+Frame.Position = UDim2.new(0.322748572, 0, 0.323687017, 0)
+Frame.Size = UDim2.new(0, 577, 0, 329)
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(117, 117, 117)
+TextBox.Position = UDim2.new(0.142114386, 0, 0.268777102, 0)
+TextBox.Size = UDim2.new(0, 432, 0, 52)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-0.00110095995, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 577, 0, 62)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Attach Key Async"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Continue.Name = "Continue"
+Continue.Parent = Frame
+Continue.BackgroundColor3 = Color3.fromRGB(85, 0, 255)
+Continue.Position = UDim2.new(0, 0, 0.726443768, 0)
+Continue.Size = UDim2.new(0, 304, 0, 77)
+Continue.Font = Enum.Font.SourceSans
+Continue.Text = "Continue"
+Continue.TextColor3 = Color3.fromRGB(255, 255, 255)
+Continue.TextScaled = true
+Continue.TextSize = 14.000
+Continue.TextWrapped = true
+
+Pass.Name = "Pass"
+Pass.Parent = Frame
+Pass.BackgroundColor3 = Color3.fromRGB(85, 0, 255)
+Pass.Position = UDim2.new(0.516464472, 0, 0.726443768, 0)
+Pass.Size = UDim2.new(0, 278, 0, 77)
+Pass.Font = Enum.Font.SourceSans
+Pass.Text = "Pre-Pass VIP"
+Pass.TextColor3 = Color3.fromRGB(255, 255, 255)
+Pass.TextScaled = true
+Pass.TextSize = 14.000
+Pass.TextWrapped = true
 
 -- Scripts:
 
-local function LBPZ_fake_script() -- TextLabel.LocalScript 
+local function BQOMWTD_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	wait(10)
@@ -56,4 +123,36 @@ local function LBPZ_fake_script() -- TextLabel.LocalScript
 	wait(5)
 	script.Parent.Parent.Parent.Parent.AttachmentFrame:Destroy()
 end
-coroutine.wrap(LBPZ_fake_script)()
+coroutine.wrap(BQOMWTD_fake_script)()
+local function QPJN_fake_script() -- Continue.LocalScript 
+	local script = Instance.new('LocalScript', Continue)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.TextBox.Text == "Best!" then
+			script.Parent.Parent.Parent.Parent.MainFrame.Visible = true
+			script.Parent.Parent.Parent.Parent.Right.Visible = true
+			script.Parent.Parent.Parent.Parent.Left.Visible = true
+			script.Parent.Parent.Parent.Parent.fade.Visible = false
+		end
+	end)
+end
+coroutine.wrap(QPJN_fake_script)()
+local function LOAU_fake_script() -- Pass.LocalScript 
+	local script = Instance.new('LocalScript', Pass)
+
+	local plr = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if plr.Name == "john_doe575757" then
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Successed!";
+				Text = "Successfully Verifyed Account!"
+			})
+			script.Parent.Parent.Parent.Parent.MainFrame.Visible = true
+			script.Parent.Parent.Parent.Parent.Right.Visible = true
+			script.Parent.Parent.Parent.Parent.Left.Visible = true
+			script.Parent.Parent.Parent.Parent.fade.Visible = false
+		end
+	end)
+end
+coroutine.wrap(LOAU_fake_script)()
